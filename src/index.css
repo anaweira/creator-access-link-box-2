@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 270 50% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 270 50% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 50% 20%;
+
+    --primary: 270 65% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 300 80% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 270 30% 95%;
+    --muted-foreground: 270 30% 40%;
+
+    --accent: 200 80% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 20% 88%;
+    --input: 270 20% 88%;
+    --ring: 270 65% 55%;
+
+    --radius: 1rem;
+    
+    /* Creator Access Gradient Colors */
+    --gradient-start: 300 85% 50%;
+    --gradient-mid: 270 65% 55%;
+    --gradient-end: 200 85% 50%;
+    
+    /* Custom Tokens */
+    --card-elevated: 0 0% 98%;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 270 50% 10%;
+    --foreground: 0 0% 100%;
+
+    --card: 270 40% 15%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 270 40% 15%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 270 60% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 300 80% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 270 30% 25%;
+    --muted-foreground: 270 20% 70%;
+
+    --accent: 200 80% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 30% 25%;
+    --input: 270 30% 25%;
+    --ring: 270 60% 60%;
+    
+    --card-elevated: 270 40% 18%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
