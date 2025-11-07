@@ -7,7 +7,7 @@ import logo from "@/assets/creator-access-logo.png";
 
 const Index = () => {
   const [copied, setCopied] = useState(false);
-  const formLink = "https://form.creatoraccess.com.br/";
+  const formLink = "https://forms.creatoraccess.com.br/";
 
   const handleCopy = async () => {
     try {
